@@ -3,7 +3,7 @@ const path = require('path')
 const fs = require('fs')
 const { exec, spawn } = require('child_process')
 
-const appname = 'dist'
+const appname = process.env.NAME || 'apiCloud'
 const appPort = 8080
 const scriptActive = process.env.BUILD
 
@@ -25,7 +25,7 @@ if (scriptActive === 'watch-build') {
 module.exports = {
   publicPath: './',
   outputDir: appname,
-  filenameHashing: process.env.HASH === 'true',
+  filenameHashing: process.env.NAME === 'h5',
   lintOnSave: true, // 是否在保存的时候检查
   productionSourceMap: true, // 生产环境是否生成 sourceMap 文件
   css: {

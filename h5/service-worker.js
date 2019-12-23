@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.68fd07e239446e8f18d95a8f1dd17184.js"
+  "precache-manifest.8148354d5f0df353d5c91f5a00a4bb71.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vue-apicloud"});
